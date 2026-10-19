@@ -2,12 +2,12 @@
 <html lang="{{page.lang | default: site.lang | default: "en"}}">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.indexing == false %}
       <meta name="robots" content="noindex">
     {% endif %}
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ site.description | escape }}">
     <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}

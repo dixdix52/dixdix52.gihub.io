@@ -17,15 +17,15 @@
 # You'll be able to call these different parameters via {{ site.yourparam }} (e.g. {{ site.title }} to retrieve the title of you site on any of your page).
 # You can add to this list any new parameter you wish, and access it anywhere in the templates.
 
-title: "A site made with Simply Cyan" # The site title
-lang: en-GB # The site language
+title: "홍은기" # The site title
+lang: ko-KR # The site language
 encoding: utf-8
-description: "An amazing website" # The description of the site
-copyright: "© It belongs to me." # The mentions that appear in the site's footer
-url: "" # The base hostname for you site, e.g. http://mysite.com
-baseurl: "/simply-cyan-theme" # The subpath of your site, e.g. /blog
-repo:
-email: youremail@something.com # The owner's email
+description: "기업소프트웨어 1학년 홍은기입니다. Python, C, SQL, Java 등 여러 언어를 공부하고 있습니다."
+copyright: "© 홍은기"
+url: "https://dixdix52.github.io"
+baseurl: "/dixdix52.gihub.io"
+repo: "https://github.com/dixdix52/dixdix52.gihub.io"
+email: ""
 # google_analytics: ""
 # google_analytics_anonymize_ip: ""
 
@@ -45,6 +45,9 @@ exclude:
   - .jekyll-cache
   - LICENSE.txt
   - CODE_OF_CONDUCT.md
+  - _categories/an-author.md
+  - _categories/another-auhtor.md
+  - _posts/2022-03-11-example-post-01.md
 
 # 4. Plugins
 plugins:
@@ -69,6 +72,6 @@ defaults:
 
 # 6. Jekyll settings
 permalink: pretty # Permalink will be /YYY/MM/DD/page-name/
-timezone: Europe/London
+timezone: Asia/Seoul
 
 
